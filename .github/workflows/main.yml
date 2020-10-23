@@ -22,7 +22,7 @@ jobs:
       - name: Install NPM dependencies
         run: npm ci
       - name: Run VUE App
-        run: npm run dev
+        run: npm run dev &
       - name: Cypress run
         uses: cypress-io/github-action@v2
         
