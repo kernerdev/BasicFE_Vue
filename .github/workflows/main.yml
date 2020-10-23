@@ -34,7 +34,7 @@ jobs:
       - name: Run VUE App
         run: npm run dev &
       - name: Cypress run
-        uses: npm run test
+        run: npm run test
       - name: Upload a Test Artifact
         uses: actions/upload-artifact@v2.2.0
         with:
