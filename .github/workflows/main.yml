@@ -9,7 +9,7 @@ jobs:
       - name: Checkout-flask-server
         uses: actions/checkout@v2
         with:
-          repository: 'https://github.com/kernerdev/BasicBE_Flask'
+          repository: 'kernerdev/BasicBE_Flask'
           path: 'server'
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
@@ -27,6 +27,9 @@ jobs:
     steps:
       - name: Run VUE App
         run: npm run dev
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        
       
 
     
