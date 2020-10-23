@@ -34,7 +34,18 @@ jobs:
       - name: Run VUE App
         run: npm run dev &
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: npm run test
+      - name: Upload a Test Artifact
+        uses: actions/upload-artifact@v2.2.0
+        with:
+          name: video
+          path: ./cypress/videos/testing_cypress.spec.js.mp4
+    
+
+        
+        
+        testing_cypress.spec.js.mp4
+    
         
       
 
