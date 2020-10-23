@@ -1,7 +1,7 @@
 name: End-to-end tests
 on: [push]
 jobs:
-  setup:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout-vue-client
@@ -11,6 +11,8 @@ jobs:
         with:
           repository: 'kernerdev/BasicBE_Flask'
           path: 'server'
+      - name: run API server
+        run: ls -l
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
