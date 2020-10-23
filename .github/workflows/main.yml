@@ -40,11 +40,7 @@ jobs:
         with:
           name: video
           path: ./cypress/videos/testing_cypress.spec.js.mp4
-    
 
-        
-        
-        testing_cypress.spec.js.mp4
     
         
       
