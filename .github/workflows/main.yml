@@ -21,10 +21,6 @@ jobs:
           node-version: '12'
       - name: Install NPM dependencies
         run: npm ci
-  build:
-    needs: [setup]
-    runs-on: ubuntu-latest
-    steps:
       - name: Run VUE App
         run: npm run dev
       - name: Cypress run
