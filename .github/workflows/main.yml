@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v2.2.0
         with:
           name: video
-          path: ./cypress/videos/testing_cypress.spec.js.mp4
+          path: ./cypress/videos/basic_e2e_test.js.mp4
 
     
         
